@@ -1,0 +1,119 @@
+.header {
+  width: 100%;
+  background-color: #3bb2a8;
+
+  &__container {
+    width: 100%;
+    max-width: 1130px;
+    padding: 0 15px 0;
+    margin: 0 auto;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      height: auto;
+      padding: 20px 15px;
+      gap: 15px;
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 28px;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  }
+
+  &__logo {
+    width: 100%;
+    max-width: 375px;
+    height: auto;
+
+    @media (max-width: 768px) {
+      max-width: 280px;
+    }
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+
+    @media (max-width: 768px) {
+      gap: 20px;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+      align-items: center;
+
+      &-img {
+        width: 18px;
+        height: 18px;
+      }
+
+      &-text {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 24px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: 768px) {
+          font-size: 18px;
+        }
+
+        &-sub {
+          font-size: 8px;
+          position: absolute;
+          bottom: -8px;
+
+          @media (max-width: 768px) {
+            font-size: 6px;
+            bottom: -6px;
+          }
+        }
+      }
+    }
+  }
+
+  &__tel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &-link {
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 24px;
+      text-decoration: none;
+      color: #460808;
+
+      @media (max-width: 768px) {
+        font-size: 18px;
+      }
+    }
+
+    &-social {
+      position: absolute;
+      bottom: -20px;
+      left: calc(50% - 34px);
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+    }
+  }
+}

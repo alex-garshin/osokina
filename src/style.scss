@@ -1,0 +1,48 @@
+@use "./assets/scss/fonts";
+@use "./assets/scss/header/header";
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+:root {
+  font-family: "Raleway", Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #460808;
+  background-color: #ebebdf;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  width: 100%;
+  background-color: #ebebdf;
+  flex: 1;
+}
+
+.footer {
+  width: 100%;
+  background-color: #3bb2a8;
+  padding: 20px 0;
+  margin-top: auto;
+
+  &__container {
+    width: 100%;
+    max-width: 1130px;
+    padding: 0 15px;
+    margin: 0 auto;
+    text-align: center;
+    color: #460808;
+    font-size: 14px;
+  }
+}
