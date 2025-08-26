@@ -1,0 +1,73 @@
+.about-me {
+    
+    &__container {
+        max-width: 1130px;
+        margin: 0 auto;
+        padding: 0 20px;
+        
+        @media (max-width: 768px) {
+            padding: 0 15px;
+        }
+        
+        @media (max-width: 480px) {
+            padding: 0 10px;
+        }
+    }
+
+    &__title {
+        font-family: "New York";
+        font-size: 44px;
+        font-weight: 700;
+        color: #3BB2A8;
+        text-align: left;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+        
+        @media (max-width: 768px) {
+            font-size: 32px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        @media (max-width: 480px) {
+            font-size: 28px;
+            margin-bottom: 25px;
+        }
+    }
+
+    &__text-block {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+        @media (max-width: 768px) {
+            gap: 15px;
+        }
+        
+        @media (max-width: 480px) {
+            gap: 12px;
+        }
+    }
+
+    &__text {
+        font-family: "Raleway", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: #460808;
+        margin: 0;
+        padding: 0;
+
+        span {
+            color: #E9631A;
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            font-size: 16px;
+        }
+        
+        @media (max-width: 480px) {
+            font-size: 14px;
+        }
+    }
+}

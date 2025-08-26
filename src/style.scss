@@ -1,5 +1,20 @@
 @use "./assets/scss/fonts";
 @use "./assets/scss/header/header";
+@use "./assets/scss/title-section/title-section";
+@use "./assets/scss/principle-section/principle-section";
+@use "./assets/scss/directions-section/directions-section";
+@use "./assets/scss/work-section/work-section";
+@use "./assets/scss/therapy-section/therapy-section";
+@use "./assets/scss/who-work-section/who-work-section";
+@use "./assets/scss/about-me/about-me";
+@use "./assets/scss/education-section/education-section";
+@use "./assets/scss/warranty-section/warranty-section";
+@use "./assets/scss/location-section/location-section";
+@use "./assets/scss/footer/footer";
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -7,6 +22,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 :root {
@@ -28,21 +44,4 @@ main {
   width: 100%;
   background-color: #ebebdf;
   flex: 1;
-}
-
-.footer {
-  width: 100%;
-  background-color: #3bb2a8;
-  padding: 20px 0;
-  margin-top: auto;
-
-  &__container {
-    width: 100%;
-    max-width: 1130px;
-    padding: 0 15px;
-    margin: 0 auto;
-    text-align: center;
-    color: #460808;
-    font-size: 14px;
-  }
 }
